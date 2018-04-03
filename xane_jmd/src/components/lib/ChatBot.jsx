@@ -643,7 +643,7 @@ ChatBot.defaultProps = {
   headerComponent: undefined,
   headerTitle: 'Chat',
   hideBotAvatar: false,
-  hideHeader: false,
+  hideHeader: true,
   hideSubmitButton: false,
   hideUserAvatar: false,
   inputStyle: {},
