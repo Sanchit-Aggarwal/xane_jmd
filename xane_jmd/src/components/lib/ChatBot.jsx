@@ -520,6 +520,7 @@ class ChatBot extends Component {
 
     return (
       <div className={`rsc ${className}`}>
+      <div><button className='btn-danger'>Bootstrap test</button></div>
         {floating && (
           <FloatButton
             className="rsc-float-button"
