@@ -529,8 +529,8 @@ class ChatBot extends Component {
           </span>
         </div>
         <div className='row'>
-          <div className='col-md-2'><Sidebar/></div>
-          <div className='col-md-10'>
+          <div className='col-md-2' style={{padding:'0px'}}><Sidebar/></div>
+          <div className='col-md-10' style={{padding:'0px'}}>
             {floating && (
           <FloatButton
             className="rsc-float-button"
