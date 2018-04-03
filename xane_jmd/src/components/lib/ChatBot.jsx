@@ -15,6 +15,7 @@ import Footer from './Footer';
 import Input from './Input';
 import SubmitButton from './SubmitButton';
 import Recognition from './recognition';
+import Sidebar from './sidebar';
 import { ChatIcon, CloseIcon, SubmitIcon, MicIcon } from './icons';
 
 class ChatBot extends Component {
@@ -520,8 +521,17 @@ class ChatBot extends Component {
 
     return (
       <div className={`rsc ${className}`}>
-      <div><button className='btn-danger'>Bootstrap test</button></div>
-        {floating && (
+        <div className='topbar'>
+          <span style={{fontWeight:'bold'}}>
+            <span style={{color:'rgb(116, 221, 232)'}}>X</span>
+            <span style={{color:'grey'}}>ane.</span>
+            <span style={{color:'rgb(116, 221, 232)'}}>ai</span>
+          </span>
+        </div>
+        <div className='row'>
+          <div className='col-md-2'><Sidebar/></div>
+          <div className='col-md-10'>
+            {floating && (
           <FloatButton
             className="rsc-float-button"
             opened={opened}
@@ -575,6 +585,8 @@ class ChatBot extends Component {
             )}
           </Footer>
         </ChatBotContainer>
+          </div>
+        </div>
       </div>
     );
   }
