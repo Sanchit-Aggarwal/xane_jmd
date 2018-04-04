@@ -17,7 +17,7 @@ const otherFontTheme = {
 const steps = [
   {
     id: '0',
-    message: 'Welcome to react chatbot!',
+    message: 'Hello Ayush!',
     trigger: '1',
   },
   {

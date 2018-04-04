@@ -107,6 +107,7 @@ class TextStep extends Component {
             <Loading />
           }
           { !this.state.loading && this.renderMessage() }
+          <span></span>
         </Bubble>
       </TextStepContainer>
     );
