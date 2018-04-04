@@ -28,6 +28,7 @@ const steps = [
   {
     id: '2',
     message: 'Nice!',
+    style:{float:'right'},
     end: true,
   }
 ];

@@ -530,6 +530,7 @@ class ChatBot extends Component {
           </span>
         </h1>
         </div>
+
         <div className='row'>
           <div className='col-md-2' style={{padding:'0px'}}><Sidebar/></div>
           <div className='col-md-10' style={{padding:'0px'}}>
@@ -556,6 +557,9 @@ class ChatBot extends Component {
             floating={floating}
             style={contentStyle}
           >
+          <div id='date'>
+            <span style={{color:'grey'}}><h1>&nbsp;&nbsp;MARCH 17,2018</h1></span>
+          </div>
             {_.map(renderedSteps, this.renderStep)}
             {console.log(renderedSteps)}
           </Content>
