@@ -107,7 +107,10 @@ class TextStep extends Component {
             <Loading />
           }
           { !this.state.loading && this.renderMessage() }
-          <span></span>
+          <br />
+          <span id='time' style={{float:'right',color:'grey'}}>
+             <span id='hours'>{new Date().getHours()}</span>:<span id='minutes'>{new Date().getMinutes()}</span>
+          </span>
         </Bubble>
       </TextStepContainer>
     );

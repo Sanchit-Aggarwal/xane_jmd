@@ -22,12 +22,12 @@ const steps = [
   },
   {
     id: '1',
-    message: 'Bye!',
+    message: 'How are You!',
     trigger: '2'
   },
   {
     id: '2',
-    message: 'Jai Mata Di!',
+    message: 'Nice!',
     end: true,
   }
 ];
