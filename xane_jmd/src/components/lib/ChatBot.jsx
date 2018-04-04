@@ -631,7 +631,7 @@ ChatBot.propTypes = {
 ChatBot.defaultProps = {
   avatarStyle: {},
   botDelay: 1000,
-  bubbleStyle: {},
+  bubbleStyle: {color:'black',backgroundColor:'white'},
   cache: false,
   cacheName: 'rsc_cache',
   className: '',
