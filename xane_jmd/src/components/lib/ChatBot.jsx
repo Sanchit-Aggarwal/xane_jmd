@@ -557,6 +557,7 @@ class ChatBot extends Component {
             floating={floating}
             style={contentStyle}
           >
+          <br />
           <div id='date'>
             <span style={{color:'grey'}}><h1>&nbsp;&nbsp;MARCH 17,2018</h1></span>
           </div>
@@ -564,7 +565,9 @@ class ChatBot extends Component {
             {console.log(renderedSteps)}
           </Content>
           <Footer className="rsc-footer" style={footerStyle}>
-            <Input
+          <div className='row'>
+            <div className='col-md-1'><img height='100%' width='100%' src='http://www.clker.com/cliparts/a/6/0/8/13450054841457633298glossy-blue-circle-button-md-md.png' /></div>
+            <div className='col-md-10'><Input
               type="textarea"
               style={inputStyle}
               innerRef={inputRef => (this.input = inputRef)}
@@ -575,21 +578,22 @@ class ChatBot extends Component {
               value={inputValue}
               floating={floating}
               invalid={inputInvalid}
-              disabled={disabled}
+              disabled={!disabled}
               hasButton={!hideSubmitButton}
-            />
+            /></div>
             {!hideSubmitButton && (
               <SubmitButton
                 className="rsc-submit-button"
                 style={submitButtonStyle}
                 onClick={this.handleSubmitButton}
                 invalid={inputInvalid}
-                disabled={disabled}
+                disabled={!disabled}
                 speaking={speaking}
               >
                 {icon}
               </SubmitButton>
-            )}
+              
+            )}</div>
           </Footer>
         </ChatBotContainer>
           </div>
@@ -653,14 +657,14 @@ ChatBot.defaultProps = {
   hideHeader: true,
   hideSubmitButton: false,
   hideUserAvatar: false,
-  inputStyle: {},
+  inputStyle: {height:'122%'},
   opened: undefined,
   placeholder: 'Type the message ...',
   recognitionEnable: false,
   recognitionLang: 'en',
   recognitionPlaceholder: 'Listening ...',
   style: {},
-  submitButtonStyle: {},
+  submitButtonStyle: {backgroundColor:'cyan',width:'8%',height:'100%'},
   toggleFloating: undefined,
   userDelay: 1000,
   width: '100%',
