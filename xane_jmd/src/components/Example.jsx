@@ -31,6 +31,7 @@ const steps = [
     style:{float:'right'},
     end: true,
   }
+  ,
 ];
 
 

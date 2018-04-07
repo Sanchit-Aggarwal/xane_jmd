@@ -532,8 +532,8 @@ class ChatBot extends Component {
         </div>
 
         <div className='row'>
-          <div className='col-md-2' style={{padding:'0px'}}><Sidebar/></div>
-          <div className='col-md-10' style={{padding:'0px'}}>
+          <div className='col-md-3' style={{padding:'0px'}}><Sidebar/></div>
+          <div className='col-md-9' style={{padding:'0px'}}>
             {floating && (
           <FloatButton
             className="rsc-float-button"
@@ -543,12 +543,18 @@ class ChatBot extends Component {
             <ChatIcon />
           </FloatButton>
         )}
+            <style>{"\
+                .bxslzG{\
+                  height:85%;\
+                }\
+              "}</style>
         <ChatBotContainer
           className="rsc-container"
           floating={floating}
           opened={opened}
           style={style}
           width={width}
+
         >
           {!hideHeader && header}
           <Content
@@ -645,7 +651,7 @@ ChatBot.defaultProps = {
   cache: false,
   cacheName: 'rsc_cache',
   className: '',
-  contentStyle: {},
+  contentStyle:{},
   customStyle: {},
   customDelay: 1000,
   floating: false,
@@ -663,7 +669,7 @@ ChatBot.defaultProps = {
   recognitionEnable: false,
   recognitionLang: 'en',
   recognitionPlaceholder: 'Listening ...',
-  style: {},
+  style: {height:'100%'},
   submitButtonStyle: {backgroundColor:'cyan',width:'8%',height:'100%'},
   toggleFloating: undefined,
   userDelay: 1000,
